@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas Naturales</title>
+    <style>
+        body {
+            font-family: Algerian, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 10px;
+        }
+        header {
+            background-color: #047522;
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 100px;
+            width: auto;
+        }
+        .menu {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+        .menu a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .menu a:hover {
+            background-color: #575757;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown .submenu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+            left: 0;
+            top: 100%;
+        }
+        .dropdown:hover .submenu {
+            display: block;
+        }
+        .submenu a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        .submenu a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        .bebida {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .bebida h2 {
+            color: #047522;
+            text-align: center;
+        }
+        .bebida img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <img src="images/img12.png" alt="logo" class="logo">
+        <h1>Bebidas Naturales</h1>
+        <p>Deliciosas y saludables recetas para disfrutar en casa.</p>
+    </header>
+
+    <!-- Menú de navegación principal -->
+    <div class="menu">
+        <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/INICIO.html">Inicio</a>
+        <div class="dropdown">
+            <a href="#">Recetarios</a>
+            <div class="submenu">
+                <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/comidas.html">Comida</a>
+                <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/BEBIDAS.html">Bebidas</a>
+                <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/postres.html">Postres</a>
+            </div>
+        </div>
+        <a href="C:\Users\Usuario\Desktop\RECETA PARA COCINA\contacto.html">Contacto</a>
+        <a href="C:\Users\Usuario\Desktop\RECETA PARA COCINA\redess.html">Redes sociales</a>
+        <li><a href="tusrecetas.html">Tus recetas</a></li>
+    </div>
+</nav>
+
+    <!-- Contenido de la página -->
+    <div class="container">
+        <div class="bebida">
+            <h2>Agua de Limón con Menta</h2>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>4 limones</li>
+                <li>1 litro de agua</li>
+                <li>Hojas de menta fresca</li>
+                <li>Hielo al gusto</li>
+                <li>Azúcar o miel (opcional)</li>
+            </ul>
+            <p><strong>Instrucciones:</strong></p>
+            <ol>
+                <li>Exprime el jugo de los limones.</li>
+                <li>En una jarra, mezcla el jugo de limón con el agua.</li>
+                <li>Añade las hojas de menta fresca y mezcla bien.</li>
+                <li>Agrega hielo al gusto y endulza si lo deseas.</li>
+                <li>Deja reposar en el refrigerador por unos minutos antes de servir.</li>
+            </ol>
+            <img src="images/img10.jpg" alt="Agua de Limón con Menta">
+        </div>
+
+        <div class="bebida">
+            <h2>Jugo de Naranja y Zanahoria</h2>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>4 naranjas</li>
+                <li>2 zanahorias</li>
+                <li>1 vaso de agua</li>
+                <li>Hielo al gusto</li>
+            </ul>
+            <p><strong>Instrucciones:</strong></p>
+            <ol>
+                <li>Exprime el jugo de las naranjas.</li>
+                <li>Lava, pela y corta las zanahorias en trozos pequeños.</li>
+                <li>En una licuadora, mezcla el jugo de naranja con los trozos de zanahoria y el agua.</li>
+                <li>Licúa hasta obtener una mezcla homogénea.</li>
+                <li>Cuela el jugo si es necesario, añade hielo al gusto y sirve.</li>
+            </ol>
+            <img src="images/img9.jpg" alt="Jugo de Naranja y Zanahoria">
+        </div>
+
+        <div class="bebida">
+            <h2>Batido de Fresas con Plátano</h2>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>1 plátano maduro</li>
+                <li>1 taza de fresas</li>
+                <li>1 taza de leche (puede ser vegetal)</li>
+                <li>1 cucharada de miel (opcional)</li>
+                <li>Hielo al gusto</li>
+            </ul>
+            <p><strong>Instrucciones:</strong></p>
+            <ol>
+                <li>Lava y corta las fresas.</li>
+                <li>Pela y corta el plátano en rodajas.</li>
+                <li>Coloca las fresas, el plátano, la leche y la miel en la licuadora.</li>
+                <li>Licúa hasta obtener una mezcla suave.</li>
+                <li>Añade hielo al gusto, mezcla nuevamente y sirve.</li>
+            </ol>
+            <img src="images/img8.jpg" alt="Batido de Fresas con Plátano">
+        </div>
+
+        <div class="bebida">
+            <h2>Limonada de Pepino</h2>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>2 limones</li>
+                <li>1 pepino</li>
+                <li>1 litro de agua</li>
+                <li>Hojas de menta fresca</li>
+                <li>Hielo al gusto</li>
+                <li>Azúcar o miel (opcional)</li>
+            </ul>
+            <p><strong>Instrucciones:</strong></p>
+            <ol>
+                <li>Exprime el jugo de los limones.</li>
+                <li>Lava y corta el pepino en rodajas finas.</li>
+                <li>En una jarra, mezcla el jugo de limón, el pepino y el agua.</li>
+                <li>Añade las hojas de menta, hielo y endulza al gusto.</li>
+                <li>Refrigera por 30 minutos antes de servir.</li>
+            </ol>
+            <img src="images/img7.jpg" alt="Limonada de Pepino">
+        </div>
+
+        <div class="bebida">
+            <h2>Té Helado de Hibisco</h2>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>2 cucharadas de flores de hibisco secas</li>
+                <li>1 litro de agua</li>
+                <li>Rodajas de limón</li>
+                <li>Miel o azúcar al gusto</li>
+                <li>Hielo al gusto</li>
+            </ul>
+            <p><strong>Instrucciones:</strong></p>
+            <ol>
+                <li>Hierve el agua y agrega las flores de hibisco.</li>
+                <li>Deja reposar durante 10 minutos y luego cuela el té.</li>
+                <li>Deja enfriar y agrega miel o azúcar al gusto.</li>
+                <li>Refrigera hasta que esté bien frío.</li>
+                <li>Sirve en vasos con hielo y decora con rodajas de limón.</li>
+            </ol>
+            <img src="images/img6.jpg" alt="Té Helado de Hibisco">
+        </div>
+        
+        <div class="bebida">
+            <h2>Jugo Verde Detox</h2>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>1 manzana verde</li>
+                <li>1 pepino</li>
+                <li>1 puñado de espinacas</li>
+                <li>1 tallo de apio</li>
+                <li>Jugo de 1 limón</li>
+                <li>1 vaso de agua</li>
+                <li>Hielo al gusto</li>
+            </ul>
+            <p><strong>Instrucciones:</strong></p>
+            <ol>
+                <li>Lava y corta todos los ingredientes en trozos pequeños.</li>
+                <li>Coloca todos los ingredientes en la licuadora.</li>
+                <li>Licúa hasta obtener una mezcla homogénea.</li>
+                <li>Cuela si es necesario, añade hielo al gusto y sirve.</li>
+            </ol>
+            <img src="images/img5.jpg" alt="Jugo Verde Detox">
+        </div>
+
+        <div class="bebida">
+            <h2><div style="text-align: center;">Agua de Sandía</h2>
+         <p><strong>Ingredientes:</strong></p>
+         <ul>
+             <li>2 tazas de sandía en cubos (sin semillas)</li>
+             <li>1 litro de agua</li>
+             <li>Jugo de 1 limón</li>
+             <li>Hojas de menta fresca (opcional)</li>
+             <li>Hielo al gusto</li>
+             <li>Azúcar o miel (opcional)</li>
+         </ul>
+         <p><strong>Instrucciones:</strong></p>
+         <ol>
+             <li>Coloca los cubos de sandía en una licuadora junto con el jugo de limón.</li>
+             <li>Agrega el agua y licúa hasta obtener una mezcla suave.</li>
+             <li>Cuela el agua de sandía si es necesario.</li>
+             <li>Añade hielo al gusto y menta fresca si lo deseas.</li>
+             <li>Sirve frío.</li>
+            </ol>
+             <img src="images/img4.jpg" alt="Agua de Sandía">
+     </div>
+ 
+     <div class="bebida">
+         <h2><div style="text-align: center;">Batido de Mango y Yogur</h2>
+         <p><strong>Ingredientes:</strong></p>
+         <ul>
+             <li>1 mango maduro</li>
+             <li>1 taza de yogur natural (puede ser vegetal)</li>
+             <li>1/2 taza de leche (puede ser vegetal)</li>
+             <li>1 cucharada de miel (opcional)</li>
+             <li>Hielo al gusto</li>
+         </ul>
+         <p><strong>Instrucciones:</strong></p>
+         <ol>
+             <li>Pela y corta el mango en trozos pequeños.</li>
+             <li>Coloca el mango, el yogur, la leche y la miel en la licuadora.</li>
+             <li>Licúa hasta obtener una mezcla cremosa.</li>
+             <li>Añade hielo si lo deseas y sirve.</li>
+            </ol>
+         <img src="images/img3.jpg" alt="Batido de Mango y Yogur">
+     </div>
+ 
+     <div class="bebida">
+         <h2><div style="text-align: center;">Infusión de Jengibre y Limón</h2>
+ 
+         <p><strong>Ingredientes:</strong></p>
+         <ul>
+             <li>1 trozo de jengibre fresco (aprox. 2 cm)</li>
+             <li>1 limón</li>
+             <li>1 litro de agua</li>
+             <li>Miel al gusto</li>
+         </ul>
+         <p><strong>Instrucciones:</strong></p>
+         <ol>
+             <li>Pela y corta el jengibre en rodajas finas.</li>
+             <li>Hierve el agua y añade el jengibre.</li>
+             <li>Deja hervir durante 10 minutos y luego retira del fuego.</li>
+             <li>Exprime el jugo del limón en la infusión.</li>
+             <li>Endulza con miel al gusto y sirve caliente o frío.</li>
+            </ol>
+             <img src="images/img2.jpg" alt="Infusión de Jengibre y Limón">
+     </div>
+ 
+     <div class="bebida">
+         <h2>Té Verde con Miel y Limón</h2>
+         <p><strong>Ingredientes:</strong></p>
+         <ul>
+             <li>2 bolsitas de té verde</li>
+             <li>1 litro de agua</li>
+             <li>Jugo de 1 limón</li>
+             <li>Miel al gusto</li>
+             <li>Hielo (opcional si se sirve frío)</li>
+         </ul>
+         <p><strong>Instrucciones:</strong></p>
+         <ol>
+             <li>Hierve el agua y agrega las bolsitas de té verde.</li>
+             <li>Deja reposar durante 3-5 minutos y luego retira las bolsitas.</li>
+             <li>Agrega el jugo de limón y endulza con miel al gusto.</li>
+             <li>Sírvelo caliente o agrega hielo para servirlo frío.</li>
+            </ol>
+             <img src="images/img1.jpg" alt="Té Verde con Miel y Limón">            
+     </div>
+ 
+     <div class="bebida">
+         <h2>Agua de Coco con Piña</h2>
+         <p><strong>Ingredientes:</strong></p>
+         <ul>
+             <li>1 taza de piña en trozos</li>
+             <li>1 taza de agua de coco</li>
+             <li>Hojas de menta fresca (opcional)</li>
+             <li>Hielo al gusto</li>
+         </ul>
+         <p><strong>Instrucciones:</strong></p>
+         <ol>
+             <li>Coloca la piña y el agua de coco en la licuadora.</li>
+             <li>Licúa hasta obtener una mezcla suave.</li>
+             <li>Añade hielo al gusto y hojas de menta si lo deseas.</li>
+             <li>Sírvelo frío.</li>
+            </ol>
+             <img src="images/img.jpg" alt="Agua de Coco con Piña">
+     </div>
+ </body>
+ </html>
+ 
+

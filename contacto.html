@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos - Delicias y Secretos</title>
+  <style>
+    body {
+      font-family: Algerian, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eaf7ea; /* Verde claro para el fondo de la página */
+      color: #000000;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em;
+      background-color: #047522; /* Verde claro para el fondo de la cabecera */
+      color: #ece9e9;
+    }
+
+    nav {
+      background-color: #111111; /* Negro para el fondo del menú */
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      position: relative; /* Necesario para posicionar el submenú */
+    }
+
+    nav a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 1em 2em; /* Aumenta el padding para hacer el menú más ancho */
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #0a0a0a3b; /* negro más oscuro para el efecto hover */
+      transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #131212; /* Fondo negro para el submenú */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .submenu a {
+      padding: 0.5em 2em; /* Padding reducido para los elementos del submenú */
+      white-space: nowrap;
+    }
+
+    nav li:hover .submenu {
+      display: block;
+    }
+
+    .section {
+      padding: 2em;
+      margin: 1em auto;
+      background-color: #ffffff; /* Fondo blanco para las secciones */
+      border-radius: 8px;
+      max-width: 800px;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #333333;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info p {
+      line-height: 1.6;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 1em;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+      padding: 0.5em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      padding: 0.5em 1em;
+      background-color: #ff0000; /* Rojo */
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #cc0000; /* Rojo más oscuro */
+      transform: scale(1.05);
+    }
+
+    /* Ocultar subcategorías por defecto */
+    .subcategory {
+      display: none;
+    }
+
+    /* Mostrar subcategoría basada en la selección */
+    #category-bebidas:checked ~ .subcategory#bebidas-subcategory,
+    #category-postres:checked ~ .subcategory#postres-subcategory,
+    #category-comidas:checked ~ .subcategory#comidas-subcategory {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contactos - Delicias y Secretos</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/INICIO.html">Inicio</a></li>
+      <li class="dropdown">
+        <a href="#">Recetarios</a>
+        <div class="submenu">
+          <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/comidas.html">Comida</a>
+          <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/BEBIDAS.html">Bebidas</a>
+          <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/postres.html">Postres</a>
+        </div>
+      </li>
+      <li><a href="C:\Users\Usuario\Desktop\RECETA PARA COCINA\contacto.html">Contacto</a></li>
+      <a href="C:\Users\Usuario\Desktop\RECETA PARA COCINA\redess.html">Redes sociales</a>
+      <li><a href="tusrecetas.html">Tus recetas</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h2>Información de Contacto</h2>
+    <div class="contact-info">
+      <p><strong></strong> Delicias y Secretos</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Formulario de Contacto</h2>
+    <form action="https://formspree.io/f/xblrwlbl" method="post" class="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label>Seleccione una categoría:</label>
+      <!-- Inputs tipo radio ocultos -->
+      <input type="radio" id="category-bebidas" name="category" value="bebidas" hidden>
+      <input type="radio" id="category-postres" name="category" value="postres" hidden>
+      <input type="radio" id="category-comidas" name="category" value="comidas" hidden>
+
+      <!-- Select para escoger la categoría, enlazado con los radios -->
+      <select id="category" name="category" required onchange="
+        document.getElementById('category-' + this.value).checked = true;
+      ">
+        <option value="">Selecciona una categoría</option>
+        <option value="bebidas">Bebidas</option>
+        <option value="postres">Postres</option>
+        <option value="comidas">Comidas</option>
+      </select>
+
+      <!-- Subcategorías para Bebidas -->
+      <div id="bebidas-subcategory" class="subcategory">
+        <label for="bebidas-select">Seleccione una bebida:</label>
+        <select id="bebidas-select" name="bebidas-subcategory">
+          <option value="cafe">Café</option>
+          <option value="te">Té</option>
+          <option value="jugo">Jugo</option>
+          <option value="refresco">Refresco</option>
+        </select>
+      </div>
+
+      <!-- Subcategorías para Postres -->
+      <div id="postres-subcategory" class="subcategory">
+        <label for="postres-select">Seleccione un postre:</label>
+        <select id="postres-select" name="postres-subcategory">
+          <option value="pastel">Pastel</option>
+          <option value="galleta">Galleta</option>
+          <option value="helado">Helado</option>
+          <option value="flan">Flan</option>
+        </select>
+      </div>
+
+      <!-- Subcategorías para Comidas -->
+      <div id="comidas-subcategory" class="subcategory">
+        <label for="comidas-select">Seleccione una comida:</label>
+        <select id="comidas-select" name="comidas-subcategory">
+          <option value="sopas">Sopas</option>
+          <option value="hamburguesa">Hamburguesa</option>
+          <option value="desayuno">Desayuno</option>
+          <option value="almuerzo">Almuerzo</option>
+          <option value="mariscos">Mariscos</option>
+        </select>
+      </div>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+</html>

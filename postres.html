@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECETAS DE NUESTROS POSTRES DELICIOSOS</title>
+    <style>
+        /* Estilos generales para el cuerpo de la página */
+        body {
+            font-family: Algerian, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        /* Estilos para el encabezado */
+        header {
+            background-color: #047522;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Estilos para el menú de navegación */
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d4d1d1;
+        }
+        /* Estilos para el contenedor principal */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .postre {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        /* Estilos para las tarjetas de recetas */
+        .recipe-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,5.5);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .recipe-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .recipe-card h2 {
+            margin-top: 0;
+            color: rgb(34, 121, 8); /* Color rosado para los títulos */
+        }
+        .recipe-card p {
+            font-size: 1.1em;
+        }
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #d8d4d4;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Estilos para el menú de navegación principal */
+        .menu {
+            background-color: #0e0d0d;
+            color: rgb(121, 8, 55);
+            padding: 10px;
+            text-align: center;
+        }
+        .menu a {
+            color: rgb(252, 246, 248);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        /* Estilos para el menú desplegable */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #131212;
+            min-width: 160px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgb(252, 249, 249);
+            text-align: left;
+        }
+        .dropdown:hover .submenu {
+            display: block;
+        }
+        /* Estilos para los enlaces de redes sociales */
+        .social {
+            margin-top: 10px;
+        }
+        .social a {
+            color: rgb(252, 251, 251);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .social a:hover {
+            text-decoration: underline;
+        }
+
+    /* Estilo específico para la imagen del logo */
+    .logo {
+        position: absolute;
+        top: 10px; /* Ajusta según el espacio deseado desde la parte superior */
+        right: 10px; /* Ajusta según el espacio deseado desde el borde derecho */
+        height: 100px; /* Ajusta la altura del logo según sea necesario */
+        width: auto; /* Mantiene la proporción del logo */
+    }
+</style>
+</head>
+<body>
+<!-- Encabezado de la página -->
+<div class="header">
+<!-- Imagen que queremos usar como logo -->
+<img src="images/img12.png" alt="logo" class="logo">
+
+    <header>
+        <h1>Recetas de Nuestros Postres Deliciosos</h1>
+        <!-- Menú de navegación principal -->
+        <nav>
+            <!-- Aquí puedes agregar los enlaces del menú de navegación si es necesario -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Menú de navegación secundario -->
+        <div class="menu">
+            <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/INICIO.html">Inicio</a>
+            <div class="dropdown">
+                <a href="#">Recetarios</a>
+                <div class="submenu">
+                    <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/comidas.html">Comida</a>
+                    <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/BEBIDAS.html">Bebidas</a>
+                    <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/postres.html">Postres</a>
+                </div>
+            </div>
+            <a href="C:\Users\Usuario\Desktop\RECETA PARA COCINA\contacto.html">Contacto</a>
+            <a href="C:\Users\Usuario\Desktop\RECETA PARA COCINA\redess.html">Redes sociales</a>
+            <li><a href="tusrecetas.html">Tus recetas</a></li>
+            </div>
+        </div>
+
+        <!-- Contenedor principal de recetas -->
+        <div class="container">
+            <section id="home">
+                <!-- Tarjeta de receta 1 -->
+                <div class="recipe-card">
+                    <img src="https://th.bing.com/th/id/OIP.dBu5i-8Wu37IEom7aWKI3gHaEJ?w=273&h=180&c=7&r=0&o=5&pid=1.7" alt="Merengue con fresas y helado" width="500" height="250">
+                    <h2>Merengue con fresas y helado</h2>
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>4 claras de huevo</li>
+                        <li>120 g de azúcar refinada</li>
+                        <li>120 g de azúcar glas</li>
+                        <li>1 1/2 tazas de fresas troceadas</li>
+                        <li>3 cdas. de azúcar glas</li>
+                        <li>4 bolas de helado de vainilla</li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <p>1. Bate las claras en la batidora; cuando comiencen a montar agrega poco a poco el azúcar refinada. Cuando el merengue esté brilloso, añade, de cucharadita en cucharadita, los 120 g de azúcar glas.</p>
+                    <p>2. Coloca la mezcla en una manga con punta estrellada. Forma con ella cuatro círculos de 15 cm de diámetro. Hornea a 130 ºC durante una hora y cuarto. Reserva.</p>
+                    <p>3. Licua una taza de fresas con las tres cucharadas de azúcar glas. Pasa la mezcla por una coladera fina para obtener un coulis.</p>
+                    <p>4. Coloca la bola de helado en el centro del merengue, salsea con el coulis y algunos trocitos de fresa. Sirve.</p>
+                    <p><a href="https://www.youtube.com/watch?v=qAUNN_Nx0E0&pp=ygUqcmVjZXRhIG1lcmVuZ3VlIHJlY2V0YSBjb24gZnJlc2FzIHkgaGVsYWRv" target="_blank">Ver preparación</a></p>
+                </div>
+
+                <!-- Tarjeta de receta 2 -->
+                <div class="recipe-card">
+                    <img src="https://th.bing.com/th/id/OIP.y8kA6q27YF4sVK6Wj5DB1gHaEJ?w=329&h=184&c=7&r=0&o=5&pid=1.7" alt="Mousse de queso con salsa de mango" width="500" height="250">
+                    <h2>Mousse de queso con salsa de mango</h2>
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>2 tazas de mango picado</li>
+                        <li>1 paquete de queso crema</li>
+                        <li>2 tazas de crema para batir</li>
+                        <li>0.5 taza de azúcar glas</li>
+                        <li>1 cucharada de jugo de limón</li>
+                        <li>2 cucharadas de miel</li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <p>1. Licua una taza y media de los cubos de mango con el jugo de limón y la miel.</p>
+                    <p>2. Bate el queso con el azúcar glas, después agrega la crema y bate hasta que forme picos.</p>
+                    <p>3. Sirve el mousse de queso crema y báñalo con el coulis de mango.</p>
+                    <p>4. Termina con algunos cubos de mango y semillas de girasol al servir.</p>
+                    <p><a href="https://www.youtube.com/watch?v=BTV98NYlUHo&pp=ygUpUkVDRVRBIE1vdXNzZSBkZSBxdWVzbyBjb24gc2Fsc2EgZGUgbWFuZ28%3D" target="_blank">Ver preparación</a></p>
+                </div>
+
+                <!-- Tarjeta de receta 3 -->
+                <div class="recipe-card">
+                    <img src="https://th.bing.com/th/id/OIP.MxWFGggQoHqcoL6vpeFgZwHaIb?w=150&h=180&c=7&r=0&o=5&pid=1.7" alt="Copa de merengue con mango" width="400" height="400">
+                    <h2>Copa de merengue con mango</h2>
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>4 claras de huevo</li>
+                        <li>1 taza de azúcar</li>
+                        <li>1 cucharadita de extracto de almendra</li>
+                        <li>0.25 de taza de almendra molida</li>
+                        <li>2 tazas de crema para batir</li>
+                        <li>Azúcar al gusto</li>
+                        <li>La pulpa de 2 mangos</li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <p>1. Bate las claras a velocidad alta en la batidora para tenerlas a punto de turrón. Añade con mucho cuidado el azúcar y el extracto de almendra.</p>
+                    <p>2. Cuando obtengas picos, retira la mezcla y vacía en una manga para que puedas formar fácilmente los merengues.</p>
+                    <p>3. Espolvorea almendra sobre ellos y hornea a 180ºC hasta que se sequen.</p>
+                    <p>4. Bate la crema y agrega azúcar al gusto.</p>
+                    <p>5. Sírvelos y alterna con la crema y la pulpa de los mangos.</p>
+                    <p><a href="https://www.youtube.com/watch?v=jYG0-zhLbEs&pp=ygUhUkVDRVRBIENvcGEgZGUgbWVyZW5ndWUgY29uIG1hbmdv" target="_blank">Ver preparación</a></p>
+                </div>
+
+                <!-- Tarjeta de receta 4 -->
+                <div class="recipe-card">
+                    <img src="https://th.bing.com/th/id/OIP.EkQ6PT6McwcWOjWv-8YEsQHaHa?w=159&h=180&c=7&r=0&o=5&pid=1.7" alt="Barritas de amaranto con crema de rompope" width="500" height="250">
+                    <h2>Barritas de amaranto con crema de rompope</h2>
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>6 barritas de amaranto</li>
+                        <li>1 taza de rompope</li>
+                        <li>1 paquete de 190 g de queso crema</li>
+                        <li>0.25 de taza de azúcar</li>
+                        <li>1 taza de leche</li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <p>1. Calienta la leche con el azúcar sin dejar de mover para disolverla; retira de la estufa.</p>
+                    <p>2. Licúa con el queso crema y cuando estén integrados, vierte en una cacerola.</p>
+                    <p>3. Incorpora el rompope y cocina a fuego medio hasta que hierva; mueve de vez en cuando, retira y deja enfriar a temperatura ambiente.</p>
+                    <p>4. Coloca las barritas de amaranto en los platos a servir y báñalas con la crema.</p>
+                    <p><a href="https://www.youtube.com/watch?v=uctVCHwA6qo&pp=ygUwUkVDRVRBIEJhcnJpdGFzIGRlIGFtYXJhbnRvIGNvbiBjcmVtYSBkZSByb21wb3Bl" target="_blank">Ver preparación</a></p>
+                </div>
+
+                <!-- Tarjeta de receta 5 -->
+                <div class="recipe-card">
+                    <img src="https://th.bing.com/th/id/OIP.HyfhijpfMKF2VM7_VTLUsAHaHa?w=164&h=180&c=7&r=0&o=5&pid=1.7" alt="Deliciosas crepas de queso cottage y peras" width="500" height="250">
+                    <h2>Deliciosas crepas de queso cottage y peras</h2>
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>8 crepas</li>
+                        <li>1 lata de peras en almíbar</li>
+                        <li>2 tazas de queso Cottage</li>
+                    </ul>
+                    <h3>Preparación</h3>
+                    <p>1. Pon el queso Cottage en un colador para que escurra el suero; escurre también las peras y pícalas.</p>
+                    <p>2. Calienta las crepas, dales forma de abanico y rellénalas con el Cottage y las peras, y ponlas en los platos a servir.</p>
+                    <p><a href="https://www.youtube.com/watch?v=RZmKk2X8fVQ&pp=ygUxUkVDRVRBIERlbGljaW9zYXMgY3JlcGFzIGRlIHF1ZXNvIGNvdHRhZ2UgeSBwZXJhcw%3D%3D" target="_blank">Ver preparación</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

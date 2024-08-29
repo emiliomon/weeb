@@ -1,0 +1,230 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+/* Menú de navegación superior */
+#top-menu {
+    background-color: #007bff;
+    color: white;
+    border-bottom: 2px solid #0056b3;
+    padding: 0 20px;
+}
+
+#top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-menu li {
+    position: relative;
+}
+
+#top-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#top-menu a:hover {
+    background-color: #0056b3;
+}
+
+/* Submenú */
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #007bff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submenu-content li {
+    border-top: 1px solid #0056b3;
+}
+
+.submenu-content a {
+    padding: 10px 15px;
+    color: white;
+    text-align: left;
+    font-weight: normal;
+}
+
+.submenu-content a:hover {
+    background-color: #0056b3;
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+/* Sección para agregar receta */
+#add-recipe-section {
+    background-color: #fff;
+    padding: 40px; /* Espaciado aumentado */
+    margin: 20px auto;
+    max-width: 900px; /* Ancho máximo aumentado */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#add-recipe-section h2 {
+    margin-top: 0;
+    margin-bottom: 30px; /* Espaciado aumentado debajo del título */
+    font-size: 28px;
+}
+
+#recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre elementos del formulario */
+}
+
+#recipe-form input,
+#recipe-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Borde más redondeado */
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna suave */
+}
+
+#recipe-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#recipe-form button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#recipe-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Sección para mostrar recetas */
+#recipes-list {
+    background-color: #f8f9fa;
+    padding: 40px; /* Espaciado interno aumentado */
+    margin: 20px auto; /* Centrado automático */
+    max-width: 900px; /* Ancho máximo */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#recipes-list h2 {
+    margin-top: 0;
+    margin-bottom: 30px; /* Espaciado debajo del título */
+    font-size: 28px;
+}
+
+#recipes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre recetas */
+}
+
+.recipe-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.recipe-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section h4 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.comment-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+
+.comments-container {
+    margin-top: 20px;
+}
+
+.comments-container p {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

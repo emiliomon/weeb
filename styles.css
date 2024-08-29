@@ -1,0 +1,174 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para el menú principal */
+.menu-principal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-principal li {
+    display: inline-block;
+}
+
+.menu-principal li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.menu-principal li a:hover {
+    background-color: #ff6347;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #047522;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Estilo general para las secciones para hacer secciones */
+section {
+    margin: 40px;
+    padding: 20px;
+    background-color: #8dfae270;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 1);
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Estilo específico para cada sección */
+.seccion-comidas {
+    background-color: #8dfae270;
+}
+
+.seccion-postres {
+    background-color: #8dfae270;
+}
+
+.seccion-bebidas {
+    background-color: #8dfae270;
+}
+
+/* Estilo para los botones */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #da47ff70;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #8753ff7e;
+}
+
+/* Estilo para el pie  (footer) ahora tiene margin-top: auto;, lo que asegura que se
+ coloque al final de la página sin estar fijo en la pantalla de página */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    
+}
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.social-link {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Cambia el color de los íconos al pasar el ratón por encima */
+.social-link:hover .social-icon {
+    opacity: 0.8;
+}
+/* Estilo general */
+body {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar el tamaño del texto y otros elementos */
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .playlist {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .video-intro video {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Ajustes para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+

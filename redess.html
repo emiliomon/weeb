@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento y estilo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Menú</title>
+    
+    <!-- Incluir Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilo general para el cuerpo del documento */
+        body {
+            font-family:Algerian, sans-serif;
+            margin: 0;
+            padding: 5;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo para el título con fuente algebráica */
+        .title {
+            text-align: center;
+            color: #e9ece9; /* Verde oscuro */
+            font-size: 32px;
+            font-family: 'Playfair Display', serif; /* Fuente algebráica */
+            padding: 25px 0;
+            background-color: #047522; /* Fondo verde claro */
+        }
+
+        /* Estilo para el menú de navegación */
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+            background-color: #0e0d0d; /* Fondo gris oscuro */
+        }
+        .menu {
+            display: flex;
+            justify-content: center; /* Centra los elementos del menú */
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .menu li {
+            position: relative;
+        }
+        .menu a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: #575757;
+            color: black;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .submenu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .submenu a:hover {
+            background-color: #575757;
+        }
+        .menu .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .menu .dropdown:hover .submenu {
+            display: block;
+        }
+
+        /* Estilo para la sección de contacto */
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        /* Estilo para los cuadros que contienen el ícono de Instagram y el teléfono */
+        .contact div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: background-color 0.3s ease; /* Transición suave */
+        }
+
+        /* Estilo para los íconos dentro de los cuadros */
+        .contact img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para el ícono del teléfono dentro del cuadro */
+        .contact .phone img {
+            width: 60px; /* Ajusta el tamaño del ícono del teléfono */
+            height: 60px;
+        }
+
+        /* Cambiar color de fondo al pasar el mouse por encima del cuadro */
+        .contact div:hover {
+            background-color: #01690196; /* Color de fondo al pasar el mouse */
+        }
+
+        /* Cambiar color de fondo al hacer clic en el cuadro */
+        .contact div:active {
+            background-color: #ccc; /* Color de fondo al hacer clic */
+        }
+          /* Estilo específico para la imagen del logo */
+    .logo {
+        position: absolute;
+        top: 10px; /* Ajusta según el espacio deseado desde la parte superior */
+        right: 10px; /* Ajusta según el espacio deseado desde el borde derecho */
+        height: 100px; /* Ajusta la altura del logo según sea necesario */
+        width: auto; /* Mantiene la proporción del logo */
+    }
+</style>
+</head>
+<body>
+<!-- Imagen que queremos usar como logo -->
+<img src="images/img12.png" alt="logo" class="logo">
+    </style>
+</head>
+<body>
+    <!-- Título encima del menú -->
+    <div class="title">
+        Redes
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="menu-container">
+            <div class="menu">
+                <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/INICIO.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="#">Recetarios</a>
+                    <div class="submenu">
+                        <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/comidas.html">Comida</a>
+                        <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/BEBIDAS.html">Bebidas</a>
+                        <a href="file:///C:/Users/Usuario/Desktop/RECETA%20PARA%20COCINA/postres.html">Postres</a>
+                        <li><a href="tusrecetas.html">Tus recetas</a></li>
+                    </div>
+                </div>
+                <a href="C:\Users\Usuario\Desktop\RECETA PARA COCINA\contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de contacto -->
+    <div class="contact">
+        <!-- Cuadro con el ícono de Instagram -->
+        <div class="instagram">
+            <a href="https://www.instagram.com/delicias_y_secretos_504?igsh=aXE1a3R1eHFlZXk3" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
+
+        <!-- Cuadro con el ícono de teléfono para hacer llamadas -->
+        <div class="phone">
+            <a href="tel:+50487790400">
+                <img src="images/img23.png" alt="Teléfono">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
